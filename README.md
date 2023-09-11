@@ -18,11 +18,11 @@ To run the server go into the TTS directory `cd ttsserver`.
 
 If this is your first time you might want to take a look at the available models/voices.
 
-`pipenv run python server.py --list_models`
+```pipenv run python server.py --list_models```
 
 Then run the server with your chosen model. If you have a GPU that supports CUDA you can add `--use_cuda true` for a faster runtime.
 
-`pipenv run python server.py --model_name tts_models/en/ljspeech/tacotron2-DDC --use_cuda true`
+```pipenv run python server.py --model_name tts_models/en/ljspeech/tacotron2-DDC --use_cuda true```
 
 By default the server runs on port `5002`, if you've changed this or it's running on a different machine you'll need to make appropriate changes in the userscript.
 
@@ -41,13 +41,13 @@ For STT to work, you first need a speech recognition model. You can find it on t
 
 In this example we use the english models:
 
-`
+```
 wget https://github.com/coqui-ai/STT-models/releases/download/english%2Fcoqui%2Fv1.0.0-huge-vocab/model.tflite
 wget https://github.com/coqui-ai/STT-models/releases/download/english%2Fcoqui%2Fv1.0.0-huge-vocab/huge-vocabulary.scorer
-`
+```
 
 Then simply run the server. Then just run the server. If you want to change the input device, you can use the `-d` flag.
 
-`pipenv run python server.py --model "model.tflite" --scorer "huge-vocabulary.scorer"`
+```pipenv run python server.py --model "model.tflite" --scorer "huge-vocabulary.scorer"```
 
 By default the server runs on port `8765`, if you've changed this or it's running on a different machine you'll need to make appropriate changes in the userscript.
