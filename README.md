@@ -4,7 +4,7 @@ This repository includes userscripts that serve as polyfills for text-to-speech 
 
 The scripts were originally designed for the XToys App, although they should be generic enough to be used with other sites, as they merely partially emulate the behaviour of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)..
 
-Server scripts are written in Python and utilize Pipenv for managing dependencies. If you do not already have it installed, please follow the guide on their [website](https://pipenv.pypa.io/en/latest/installation/).
+The server scripts are written in Python and utilize Pipenv for managing dependencies. If you do not already have it installed, please follow the guide on their [website](https://pipenv.pypa.io/en/latest/installation/).
 
 To install the dependencies, simply run `pipenv install` in the respective directories.
 
@@ -37,7 +37,7 @@ Like with the TTS server, the STT server is also based on a coqui example. This 
 
 To run the server go into the STT directory `cd sttserver`.
 
-For STT to work, you first need a speech recognition model. You can find it on their [their Github](https://github.com/coqui-ai/STT-models/releases).
+For STT to work, you first need a speech recognition model. You can find it on their [Github](https://github.com/coqui-ai/STT-models/releases).
 
 In this example we use the english models:
 
